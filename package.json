@@ -1,7 +1,7 @@
 {
-  "name": "deck-search",
+  "name": "catbee-boilerplate",
   "version": "1.0.0",
-  "description": "Deck search engine. Clash Royale, Hearthstone, PokemonTCG and other TCG...",
+  "description": "Boilerplate",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -30,5 +30,8 @@
     "postcss-loader": "^0.9.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
+  },
+  "engines": {
+    "node": "6.0.0"
   }
 }
