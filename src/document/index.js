@@ -5,5 +5,11 @@ class Document {
 }
 
 module.exports = {
-  constructor: Document
+  constructor: Document,
+  children: [
+    {
+      name: 'head',
+      component: require('../head')
+    }
+  ]
 };

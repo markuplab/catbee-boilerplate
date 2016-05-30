@@ -5,8 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "concurrently 'nodemon server.js -e js,css,hbs --ignore build/build.js --ignore build/build.css' 'webpack --watch'",
-    "test": "lab"
+    "start": "PORT=3000 concurrently 'nodemon server.js -e js,css,hbs --ignore build/build.js --ignore build/build.css' 'webpack --watch'",
+    "build": "webpack",
+    "test": "lab",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Kirill Kaysarov <defcuts@mail.ru>",
   "dependencies": {

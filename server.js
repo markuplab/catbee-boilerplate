@@ -23,4 +23,4 @@ app.use('/static', express.static(path.join(__dirname, './static')));
 app.use('/public', express.static(path.join(__dirname, './build')));
 app.use(cat.getMiddleware());
 
-app.listen(3000);
+app.listen(process.env.PORT);
